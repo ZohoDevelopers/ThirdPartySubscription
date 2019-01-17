@@ -84,8 +84,8 @@ class Utils
 
 	public function checkJsonResponse($json)
 	{
-		// return ($json[CODE] == SUCCESS_CODE && strpos($json[MESSAGE],SUCCESS));
-		return true;
+		return ($json[CODE] == SUCCESS_CODE && strpos($json[MESSAGE],SUCCESS));
+		// return true;
 	}
 	public function getSpecificCustomerData($key)
 	{
